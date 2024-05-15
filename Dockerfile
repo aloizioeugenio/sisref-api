@@ -22,7 +22,7 @@ RUN python3 -m ensurepip
 RUN pip3 install --no-cache --upgrade pip setuptools
 RUN pip3 install mysqlclient
 RUN pip3 install -r requirements.txt
-RUN source virtual_environment/bin/activate
+RUN source .venv/bin/activate
 
 # entrypoint to run the django.sh file
 # ENTRYPOINT ["/app/django.sh"]
